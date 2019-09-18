@@ -15,8 +15,7 @@ state = {displayBio : false};
                 <img src={profile} alt='profile' className='profile'/>
                 <h1>Hey I'm Ulaş.</h1>
                 <p>I'm the Junior Software Engineer.</p>
-                <p>And the Senior Learner</p>
-                <p>Finally, the retired Officer:)</p>
+                <p>And the Senior Learner :)</p>
             
             { this.state.displayBio ?  
                 (
