@@ -1,0 +1,22 @@
+{
+    "projects":[
+       {
+          "id":1,
+          "title":"Example React App",
+          "description":"A react app that i build involving js and web dev concepts",
+          "link":"https://medium.com/@ulass.seker"
+       },
+       {
+          "id":2,
+          "title":"Example React App2",
+          "description":"A react app that i build involving js and web dev concepts",
+          "link":"https://medium.com/@ulass.seker"
+       },
+       {
+          "id":3,
+          "title":"Example React App3",
+          "description":"A react app that i build involving js and web dev concepts",
+          "link":"https://medium.com/@ulass.seker"
+       }
+    ]
+ }

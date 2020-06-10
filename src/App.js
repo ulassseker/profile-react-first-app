@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Projects from './Projects';
-import SocialProfiles from './SocialProfiles';
 import profile from './assets/profile.png';
 
 class App extends Component{
@@ -12,7 +11,7 @@ state = {displayBio : false};
     render(){
         return(
             <div>
-                <img src={profile} alt='profile' className='profile'/>
+                {/* <img src={profile} alt='profile' className='profile'/>
                 <h1>Hey I'm Ulaş.</h1>
                 <p>I'm the Junior Software Engineer.</p>
                 <p>And the Senior Learner :)</p>
@@ -29,11 +28,11 @@ state = {displayBio : false};
                         <button onClick={this.toggleBio}>Read More...</button>
                     </div>
                 )
-            }
+            } */}
             <hr /> 
             <Projects />
             <hr />
-            <SocialProfiles />
+            {/* <SocialProfiles /> */}
             </div>
             
 
