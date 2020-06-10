@@ -1,43 +1,60 @@
 import React, {Component} from 'react';
 import Projects from './Projects';
-import profile from './assets/profile.png';
 
 class App extends Component{
-state = {displayBio : false};
+
+constructor(props){
+    super(props);
+    this.state = {
+        items: [],
+        isLoaded: false,
+        displayBio : false
+    }
+}
+
+    // componentDidMount(){
+
+    // let headers = new Headers();
+    //     //to disable cors
+    //     headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    //     headers.append('Access-Control-Allow-Credentials', 'true');
+        
+    // const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    // const url = "http://master.qa.ononay:8033/arge-it-dashboard/qa";
+
+    // fetch(url,{mode: "no-cors"})
+    //     .then(res => res.json())
+    //     .then(json => {
+    //         this.setState({
+    //             isLoaded: true,
+    //             items: json
+    //         })
+    //     })
+    // }
 
     toggleBio = () => {
         this.setState({displayBio : !this.state.displayBio});
     }
-    render(){
-        return(
-            <div>
-                {/* <img src={profile} alt='profile' className='profile'/>
-                <h1>Hey I'm Ulaş.</h1>
-                <p>I'm the Junior Software Engineer.</p>
-                <p>And the Senior Learner :)</p>
-            
-            { this.state.displayBio ?  
-                (
-                    <div>
-                        <p>This is my bio.</p>
-                        <button onClick={this.toggleBio}>Show Less...</button>
-                    </div>
-                ) : 
-                (
-                    <div>
-                        <button onClick={this.toggleBio}>Read More...</button>
-                    </div>
-                )
-            } */}
-            <hr /> 
-            <Projects />
-            <hr />
-            {/* <SocialProfiles /> */}
-            </div>
-            
 
-        )
-    }
+    render(){
+
+        // var {isLoaded,items} = this.state;
+        // if(!isLoaded){
+            
+        //     return <div>Loading...</div>;
+        // }
+
+        // else{
+            // console.log(items);
+            return(
+                <div>
+                <h1>Data has been loaded</h1>
+                <hr /> 
+                <Projects />
+                </div>
+        );
+        // }
+}
 }
 
 export default App;

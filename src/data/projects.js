@@ -3,8 +3,6 @@
 // import project3 from '../assets/project3.png';
 import projectList from './projectList.json';
 
-
-
  const PROJECTS = projectList.projects;
 
 export default PROJECTS;
