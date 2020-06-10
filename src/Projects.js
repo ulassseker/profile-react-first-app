@@ -4,7 +4,7 @@ import PROJECTS from './data/projects';
 class Project extends Component{
 
     
-
+    
     render(){
         const {title, description, link} = this.props.project;
 
